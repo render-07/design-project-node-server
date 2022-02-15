@@ -1,0 +1,20 @@
+{
+  "name": "DP_Node_Server",
+  "version": "1.0.0",
+  "description": "Sample node server for design project",
+  "main": "server.js",
+  "author": "Redner Ivan P Cabra",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "concurrently": "^6.5.1",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
