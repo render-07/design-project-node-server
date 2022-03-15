@@ -3,7 +3,11 @@ const Schema = mongoose.Schema;
 
 // Create schema
 const InformationSchema = new Schema({
-  uid: {
+  fromWhatDevice: {
+    type: String,
+    required: true,
+  },
+  closeContact: {
     type: String,
     required: true,
   },

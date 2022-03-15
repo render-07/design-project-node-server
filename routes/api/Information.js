@@ -6,7 +6,8 @@ const Information = require('../../models/Information');
 
 router.post('/', (req, res) => {
   const newInfo = new Information({
-    uid: req.body.uid,
+    fromWhatDevice: req.body.fromWhatDevice,
+    closeContact: req.body.closeContact,
   });
   newInfo
     .save()
