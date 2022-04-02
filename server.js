@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 
 const information = require('./routes/api/Information');
 const devices = require('./routes/api/devices');
+const location = require('./routes/api/location');
 
 const app = express();
 
@@ -13,7 +14,7 @@ app.use(bodyParser.json());
 // DB Config
 const db = require('./config/keys').mongoURI;
 
-// Connect to MongoDB
+// Connect to MongoDB`
 mongoose
   .connect(db)
   .then(() => console.log('Connected to MongoDB'))
@@ -22,6 +23,7 @@ mongoose
 // Use routes
 app.use('/api/information', information);
 app.use('/api/devices', devices);
+app.use('/api/location', location);
 
 const port = 5000;
 
