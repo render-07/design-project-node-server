@@ -9,11 +9,11 @@ const LocationSchema = new Schema({
   },
   latitude: {
     type: String,
-    required: true,
+    required: false,
   },
   longitude: {
     type: String,
-    required: true,
+    required: false,
   },
   date: {
     type: Date,
